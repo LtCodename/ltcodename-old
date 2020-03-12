@@ -87,7 +87,7 @@ const Home = () => {
                     <Title>Skills</Title>
                 </TitleWrapper>
             </SkillsLink>
-            <ProjectsLink to={`/general`}>
+            <ProjectsLink to={`/projects`}>
                 <TitleWrapper>
                     <Title>Projects</Title>
                 </TitleWrapper>
