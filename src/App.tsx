@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import TabGeneral from "./components/TabGeneral";
 import TabAbout from "./components/TabAbout";
 import TabExperience from "./components/TabExperience";
+import TabSkills from "./components/TabSkills";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
                 <Route exact path="/general" component={TabGeneral}/>
                 <Route exact path="/about" component={TabAbout}/>
                 <Route exact path="/experience" component={TabExperience}/>
+                <Route exact path="/skills" component={TabSkills}/>
                 <Redirect to="/home"/>
             </Switch>
         </BrowserRouter>
