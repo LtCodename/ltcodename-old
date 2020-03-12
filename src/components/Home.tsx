@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import { Col, Row } from "./Layout";
+import { NavLink } from "react-router-dom";
 
 const LinksGrid = styled(Col)`
     display: flex;
 `;
 
-const Link = styled.a`
+const Link = styled(NavLink)`
     text-decoration: none;
     transition: border-width .5s;
     height: 20vh;
@@ -19,6 +20,11 @@ const Link = styled.a`
 	    margin-top: -10px;
         margin-bottom: -10px;
         font-size: 50px;
+	}
+	
+	:last-child:hover {
+	    height: calc(20vh + 10px);
+	    margin-bottom: 0;
 	}
 `;
 
@@ -61,28 +67,27 @@ const Title = styled.span`
 const Home = () => {
     return (
         <LinksGrid>
-            {/*<GeneralLink to={`/general`}>*/}
-            <GeneralLink>
+            <GeneralLink to={`/general`}>
                 <TitleWrapper>
                     <Title>General</Title>
                 </TitleWrapper>
             </GeneralLink>
-            <AboutLink>
+            <AboutLink to={`/general`}>
                 <TitleWrapper>
                     <Title>About</Title>
                 </TitleWrapper>
             </AboutLink>
-            <ExperienceLink>
+            <ExperienceLink to={`/general`}>
                 <TitleWrapper>
                     <Title>Experience</Title>
                 </TitleWrapper>
             </ExperienceLink>
-            <SkillsLink>
+            <SkillsLink to={`/general`}>
                 <TitleWrapper>
                     <Title>Skills</Title>
                 </TitleWrapper>
             </SkillsLink>
-            <ProjectsLink>
+            <ProjectsLink to={`/general`}>
                 <TitleWrapper>
                     <Title>Projects</Title>
                 </TitleWrapper>

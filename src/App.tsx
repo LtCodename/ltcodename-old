@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import Home from "./components/Home";
+import TabGeneral from "./components/TabGeneral";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -16,19 +17,19 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App: React.FC = () => {
-    // const allContent = (
-    //     <BrowserRouter>
-    //         <Switch>
-    //             <Route exact path="/home" component={Home}/>
-    //             <Redirect to="/home"/>
-    //         </Switch>
-    //     </BrowserRouter>
-    // );
+    const allContent = (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/home" component={Home}/>
+                <Route exact path="/general" component={TabGeneral}/>
+                <Redirect to="/home"/>
+            </Switch>
+        </BrowserRouter>
+    );
 
     return (
         <>
-            {/*{allContent}*/}
-            <Home/>
+            {allContent}
             <GlobalStyles/>
         </>
     );
