@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 import Home from "./components/Home";
 import TabGeneral from "./components/TabGeneral";
 import TabAbout from "./components/TabAbout";
+import TabExperience from "./components/TabExperience";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/general" component={TabGeneral}/>
                 <Route exact path="/about" component={TabAbout}/>
+                <Route exact path="/experience" component={TabExperience}/>
                 <Redirect to="/home"/>
             </Switch>
         </BrowserRouter>

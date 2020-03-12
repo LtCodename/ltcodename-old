@@ -77,7 +77,7 @@ const Home = () => {
                     <Title>About</Title>
                 </TitleWrapper>
             </AboutLink>
-            <ExperienceLink to={`/general`}>
+            <ExperienceLink to={`/experience`}>
                 <TitleWrapper>
                     <Title>Experience</Title>
                 </TitleWrapper>
