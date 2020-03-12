@@ -16,6 +16,7 @@ const Link = styled(NavLink)`
     cursor: pointer;
     color: #5c1010;
     background: #FFFFFF;
+    margin-bottom: 10px;
 	:hover {
 	    text-decoration: none;
         font-size: 50px;

@@ -72,7 +72,7 @@ const Home = () => {
                     <Title>General</Title>
                 </TitleWrapper>
             </GeneralLink>
-            <AboutLink to={`/general`}>
+            <AboutLink to={`/about`}>
                 <TitleWrapper>
                     <Title>About</Title>
                 </TitleWrapper>

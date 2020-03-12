@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import Home from "./components/Home";
 import TabGeneral from "./components/TabGeneral";
+import TabAbout from "./components/TabAbout";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Switch>
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/general" component={TabGeneral}/>
+                <Route exact path="/about" component={TabAbout}/>
                 <Redirect to="/home"/>
             </Switch>
         </BrowserRouter>
