@@ -4,7 +4,8 @@ import { Col, Row } from "./Layout";
 import { NavLink } from "react-router-dom";
 
 const UltimateWrapper = styled(Col)`
-    color: #a5040a
+    color: #a5040a;
+    padding-bottom: 20px;
 `;
 
 /*const Period = styled.span`
@@ -61,6 +62,7 @@ const Title = styled.span`
 
 const GeneralColumn = styled(Col)`
     align-items: center;
+    padding: 0 20px;
 `;
 
 const TextLink = styled.a`
@@ -73,7 +75,6 @@ const TextLink = styled.a`
 
 const TextWrapper = styled.div`
     max-width: 500px;
-    min-width: 500px;
 `;
 
 const ExperienceText = styled.span`
@@ -322,7 +323,7 @@ const TabExperience = () => {
                         </IconAndText>
                     </DataGrid>
                     <TextWrapper>
-                        <ExperienceText>Responsible for various writing activities including:</ExperienceText>
+                        <ExperienceText>Responsible for various writing, editing and interviewing activities including:</ExperienceText>
                         <UL>
                             <li>- Writing PC games reviews/previews and features.</li>
                             <li>- Editing activities.</li>

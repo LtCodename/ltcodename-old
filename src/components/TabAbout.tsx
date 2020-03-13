@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const UltimateWrapper = styled(Col)`
     color: #990b35;
+    padding-bottom: 20px;
 `;
 
 const Link = styled(NavLink)`
@@ -36,6 +37,7 @@ const Title = styled.span`
 
 const GeneralColumn = styled(Col)`
     align-items: center;
+    padding: 0 20px;
 `;
 
 const TextWrapper = styled(Col)`
