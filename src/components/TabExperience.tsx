@@ -4,20 +4,21 @@ import { Col, Row } from "./Layout";
 import { NavLink } from "react-router-dom";
 
 const UltimateWrapper = styled(Col)`
-    color: #D52941;
+    color: #a5040a
 `;
 
-const Period = styled.span`
+/*const Period = styled.span`
     font-weight: 800;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
-`;
+`;*/
 
 const DataGrid = styled.div`
+    margin-bottom: 20px;
 `;
 
 const SVG = styled.svg`
-    fill: #D52941;
+    fill: #a5040a;
     height: 30px;
     margin-right: 10px;
 `;
@@ -38,9 +39,9 @@ const Link = styled(NavLink)`
     transition: all .5s;
     font-size: 45px;
     cursor: pointer;
-    color: #D52941;
+    color: #a5040a;
     background: #FCD581;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 	:hover {
 	    text-decoration: none;
         font-size: 50px;
@@ -63,7 +64,7 @@ const GeneralColumn = styled(Col)`
 `;
 
 const TextLink = styled.a`
-    color: #D52941;
+    color: #a5040a;
     text-decoration: none;
     :hover {
         text-decoration: underline;
@@ -72,6 +73,7 @@ const TextLink = styled.a`
 
 const TextWrapper = styled.div`
     max-width: 500px;
+    min-width: 500px;
 `;
 
 const ExperienceText = styled.span`
@@ -79,7 +81,9 @@ const ExperienceText = styled.span`
 
 const ExperiencePiece = styled(Col)`
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 10px solid #a5040a;
 `;
 
 const UL = styled.ul`
@@ -96,8 +100,16 @@ const TabExperience = () => {
             </Link>
             <GeneralColumn>
                 <ExperiencePiece>
-                    <Period>October 2019 - January 2020</Period>
+                    {/*<Period>October 2019 - January 2020</Period>*/}
                     <DataGrid>
+                        <IconAndText>
+                            <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar"
+                                 role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"/>
+                            </SVG>
+                            <Text>October 2019 - January 2020</Text>
+                        </IconAndText>
                         <IconAndText>
                             <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
                                  role="img" xmlns="http://www.w3.org/2000/svg"
@@ -123,8 +135,16 @@ const TabExperience = () => {
                     </TextWrapper>
                 </ExperiencePiece>
                 <ExperiencePiece>
-                    <Period>November 2018 - June 2019</Period>
+                    {/*<Period>November 2018 - June 2019</Period>*/}
                     <DataGrid>
+                        <IconAndText>
+                            <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar"
+                                 role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"/>
+                            </SVG>
+                            <Text>November 2018 - June 2019</Text>
+                        </IconAndText>
                         <IconAndText>
                             <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
                                  role="img" xmlns="http://www.w3.org/2000/svg"
@@ -155,8 +175,16 @@ const TabExperience = () => {
                     </TextWrapper>
                 </ExperiencePiece>
                 <ExperiencePiece>
-                    <Period>August 2018 - June 2019</Period>
+                    {/*<Period>August 2018 - June 2019</Period>*/}
                     <DataGrid>
+                        <IconAndText>
+                            <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar"
+                                 role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"/>
+                            </SVG>
+                            <Text>August 2018 - June 2019</Text>
+                        </IconAndText>
                         <IconAndText>
                             <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
                                  role="img" xmlns="http://www.w3.org/2000/svg"
@@ -188,8 +216,16 @@ const TabExperience = () => {
                     </TextWrapper>
                 </ExperiencePiece>
                 <ExperiencePiece>
-                    <Period>September 2015 - August 2018</Period>
+                    {/*<Period>September 2015 - August 2018</Period>*/}
                     <DataGrid>
+                        <IconAndText>
+                            <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar"
+                                 role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"/>
+                            </SVG>
+                            <Text>September 2015 - August 2018</Text>
+                        </IconAndText>
                         <IconAndText>
                             <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
                                  role="img" xmlns="http://www.w3.org/2000/svg"
@@ -219,8 +255,16 @@ const TabExperience = () => {
                     </TextWrapper>
                 </ExperiencePiece>
                 <ExperiencePiece>
-                    <Period>June 2015 - September 2015</Period>
+                    {/*<Period>June 2015 - September 2015</Period>*/}
                     <DataGrid>
+                        <IconAndText>
+                            <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar"
+                                 role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"/>
+                            </SVG>
+                            <Text>June 2015 - September 2015</Text>
+                        </IconAndText>
                         <IconAndText>
                             <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
                                  role="img" xmlns="http://www.w3.org/2000/svg"
@@ -249,8 +293,16 @@ const TabExperience = () => {
                     </TextWrapper>
                 </ExperiencePiece>
                 <ExperiencePiece>
-                    <Period>September 2010 - July 2013</Period>
+                    {/*<Period>September 2010 - July 2013</Period>*/}
                     <DataGrid>
+                        <IconAndText>
+                            <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar"
+                                 role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"/>
+                            </SVG>
+                            <Text>September 2010 - July 2013</Text>
+                        </IconAndText>
                         <IconAndText>
                             <SVG aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
                                  role="img" xmlns="http://www.w3.org/2000/svg"

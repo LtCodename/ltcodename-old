@@ -16,7 +16,7 @@ const Link = styled(NavLink)`
     cursor: pointer;
     color: #FFF8E8;
     background: #D52941;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 	:hover {
 	    text-decoration: none;
         font-size: 50px;
@@ -45,7 +45,7 @@ const SVG = styled.svg`
 `;
 
 const IconsRow = styled(Row)`
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 `;
 
 const Skills = styled(Row)`
@@ -100,7 +100,6 @@ const TabSkills = () => {
                     <Skill>Node.js</Skill>
                     <Skill>Express.js</Skill>
                     <Skill>Redux</Skill>
-                    <Skill>Angular</Skill>
                     <Skill>Firebase</Skill>
                     <Skill>ActionScript 3</Skill>
                     <Skill>Photoshop</Skill>

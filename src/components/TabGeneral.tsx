@@ -16,7 +16,7 @@ const Link = styled(NavLink)`
     cursor: pointer;
     color: #5c1010;
     background: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 	:hover {
 	    text-decoration: none;
         font-size: 50px;
@@ -41,7 +41,7 @@ const InfoWrapper = styled(Col)`
 const Name = styled.span`
     font-weight: 800;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 `;
 
 const DataGrid = styled.div`

@@ -40,7 +40,7 @@ const AboutLink = styled(Link)`
 
 const ExperienceLink = styled(Link)`
     background: #FCD581;
-    color: #D52941;
+    color: #a5040a;
 `;
 
 const SkillsLink = styled(Link)`
