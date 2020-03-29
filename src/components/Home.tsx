@@ -81,22 +81,33 @@ const ToggleButton = styled.button`
     }
 `;
 
-const ContentWrapper = styled.div<{ opened: boolean }>`
-    height: ${props =>  (props.opened ? 'auto' : 0) };
+const ContentWrapper = styled.div`
+    transition: max-height .4s linear;
+    max-height: 0;
     overflow: hidden;
 `;
 
 const Home = () => {
-
     const [selectedSection, setSelectedSection] = useState('');
 
     const onToggle = (event:React.MouseEvent) => {
         //@ts-ignore
         const { id } = event.target;
-        if (selectedSection !== id) {
-            setSelectedSection(id);
-        } else {
-            setSelectedSection('');
+        const targetSection = document.getElementById('section-' + id);
+
+        if (targetSection) {
+            if (selectedSection !== id) {
+                const previousTarget = document.getElementById('section-' + selectedSection);
+                if (previousTarget) {
+                    previousTarget.style.maxHeight = '0px';
+                }
+
+                targetSection.style.maxHeight = targetSection.scrollHeight + 'px';
+                setSelectedSection(id);
+            } else {
+                targetSection.style.maxHeight = '0px';
+                setSelectedSection('');
+            }
         }
     };
 
@@ -111,7 +122,7 @@ const Home = () => {
                         General
                     </ToggleButton>
                 </TitleWrapper>
-                <ContentWrapper opened={selectedSection === 'general'}>
+                <ContentWrapper id={'section-general'}>
                     <TabGeneral/>
                 </ContentWrapper>
             </GeneralLink>
@@ -124,7 +135,7 @@ const Home = () => {
                         About
                     </ToggleButton>
                 </TitleWrapper>
-                <ContentWrapper opened={selectedSection === 'about'}>
+                <ContentWrapper id={'section-about'}>
                     <TabAbout/>
                 </ContentWrapper>
             </AboutLink>
@@ -137,7 +148,7 @@ const Home = () => {
                         Experience
                     </ToggleButton>
                 </TitleWrapper>
-                <ContentWrapper opened={selectedSection === 'experience'}>
+                <ContentWrapper id={'section-experience'}>
                     <TabExperience/>
                 </ContentWrapper>
             </ExperienceLink>
@@ -150,7 +161,7 @@ const Home = () => {
                         Skills
                     </ToggleButton>
                 </TitleWrapper>
-                <ContentWrapper opened={selectedSection === 'skills'}>
+                <ContentWrapper id={'section-skills'}>
                     <TabSkills/>
                 </ContentWrapper>
             </SkillsLink>
@@ -163,7 +174,7 @@ const Home = () => {
                         Projects
                     </ToggleButton>
                 </TitleWrapper>
-                <ContentWrapper opened={selectedSection === 'projects'}>
+                <ContentWrapper id={'section-projects'}>
                     <TabProjects/>
                 </ContentWrapper>
             </ProjectsLink>
