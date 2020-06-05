@@ -37,7 +37,7 @@ const Links = styled(Row)`
 const SVG = styled.svg`
     fill: #FFFFFF;
     height: 40px;
-    margin-right: 10px;
+    margin: 0 5px;
 `;
 
 const TabProjects = () => {
