@@ -4,7 +4,7 @@ import { Col, Row } from "./Layout";
 
 const InfoWrapper = styled(Col)`
     align-items: center;
-    padding: 0 0 30px 0;
+    padding: 0 30px 30px 30px;
 `;
 
 const Name = styled.span`

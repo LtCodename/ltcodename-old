@@ -4,7 +4,7 @@ import { Col } from "./Layout";
 
 const GeneralColumn = styled(Col)`
     align-items: center;
-    padding: 0 0 30px 0;
+    padding: 0 30px 30px 30px;
 `;
 
 const TextWrapper = styled(Col)`
@@ -44,7 +44,7 @@ const TabAbout = () => {
             <TextWrapper>
                 <ParagraphTitle>Introduction</ParagraphTitle>
                 <Paragraph>Open for Front End Developer and/or Project Manager positions.</Paragraph>
-                <Paragraph>I've been working in game development for almost 5 years as a Community Manager, UI Programmer
+                <Paragraph>I've been working in game development for 4 years as a Community Manager, UI Programmer
                     and then Project Manager. Now I'm making my first steps as a Front-End Developer. Check out my <SmallNavLink>Projects</SmallNavLink> section
                     and my <TextLink target="_blank" href="https://github.com/LtCodename">GitHub</TextLink> profile to take a look at the stuff I’ve created. Programming now is an integral part
                     of my life, I enjoy watching how things on a screen evolve from a first line of simple code to a vast
